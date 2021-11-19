@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(images/main-bg.jpg);
+    background-attachment: fixed;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-color:white;
+    background-image: url(images/logo-restructure.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 135px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav {
+    
+    padding: 8px;
+    margin-top: 80px;
+    color: darkslategrey;
+    float: right;
+}
+
+nav a{
+    padding: 8px;
+    text-decoration: none;
+    color: darkslategrey;
+}
+nav a:hover {
+    border-top: cadetblue 2px solid;
+    border-left: cadetblue 2px solid;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* MAIN SLIDESHOW STYLING */
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+#slide01 {
+    background-image: url(images/main-image-0.png);
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    
+    padding-top: 30px;
+}
+#slide02 {
+    background-image: url(images/main-image-1.png);
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    padding-top: 30px;
+}
+#slide03 {
+    background-image: url(images/main-image-2.png);
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0s;
+  animation-name: fade;
+  animation-duration: 0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1000px) {
+  .text {font-size: 11px}
+  #slide01, #slide02, #slide03 {
+      height: 450px;
+  }
+  .typewriter {
+    border: none;
+    border-right: 3px solid orangered; /* The typwriter cursor */
+    letter-spacing: 0.5;
+    white-space: unset;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .text {font-size: 11px}
+    #slide01, #slide02, #slide03 {
+        height: 400px;
+    }
+    .typewriter {
+        border: none;
+        border-right: 3px solid orangered; /* The typwriter cursor */
+        letter-spacing: 0.5;
+        white-space: unset;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .text {font-size: 11px}
+    #slide01 {
+        background-image: url(images/main-image-0-crop.png);
+    }
+    #slide02 {
+        background-image: url(images/main-image-1-crop.png);
+    }
+    #slide03 {
+        background-image: url(images/main-image-2-crop.png);
+    }
+    .typewriter {
+        border: none;
+        border-right: 3px solid orangered; /* The typwriter cursor */
+        letter-spacing: 0.5;
+        white-space: unset;
+    }
+}
+
+
+/* MAIN SLIDESHOW STYLING ENDS*/
+
+
+
+
+
+
+
+
+/*.banner {
+    background-image: url(images/main-image-0.png);
+    
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    
+}*/
+#learn-more-link {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    background-color: red;
+    font-family: 'Rubik', sans-serif;
+
+}
+#learn-more-link:hover {
+    border: white solid 1px;
+}
+#learn-more-container {
+    padding-top: 25%;
+    text-align: center;
+}
+#materialic {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.typewriter {
+font-family: 'Nunito', sans-serif;
+
+font-size: 2.5vw;
+overflow: visible; /* Ensures the content is not revealed until the animation */
+border-right: 3px solid orangered; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin-left: 40%; /* Gives that scrolling effect as the typing happens */
+margin-right: 2%;
+letter-spacing: 0.5px; /* Adjust as needed */
+}
+
+
+.coverimg {
+    height: 500px;
+    width: 300px;
+    margin-inline: 10%;
+}
+
+.detail-text {
+    /*text-align: justify; */
+    height: 500px; 
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
+    color: white;
+}
+
+.img-boxes{
+    border-bottom:solid rgb(255, 253, 253) 1px;
+    border-bottom-width: 2px;
+    display:inline-block;
+    margin: 10px;
+    width: 280px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.img-boxes-2{
+    display:inline-block;
+    margin: 50px;
+    width: 75px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+.img-boxes-2 a{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.img-boxes div{
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+    background-position:center;
+}
+.img-boxes-2 div{
+    width: 100%;
+    height: 75px;
+    background-size: cover;
+    background-position:center;
+}
+
+.no-bg-text {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    padding: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.no-bg-elements {
+    border: solid rgb(255, 253, 253) 1px;
+    display:inline-block;
+    margin: 10px;
+    padding: 5px;
+    width: 280px;
+    text-align: center;
+}
+
+form {
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(116, 108, 108,0.75);
+}
+
+
+
+
+
+
+
+
+/* When the screen is less than 600 pixels
+ wide, hide all links, except for the first 
+ one ("Home"). Show the link that contains 
+ should open and close the topnav (.icon) */
+ .menu-icon {
+    visibility: hidden;
+ }
+@media screen and (max-width: 1140px) {
+    nav {
+        float: none;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    nav a {
+        display: none;
+        margin: 0;
+        margin: 0;
+    }
+    nav a.menu-icon {
+
+        float: right; /*for visible icon*/
+        display: block;
+        visibility: visible;
+    
+    }
+
+    header {
+        
+        
+    }
+    #slide01, #slide02, #slide03 {
+        padding-top: 20px;
+        
+    }
+   
+    
+    .banner {
+        width: auto;
+        height: 400px;
+    }
+    .banner-images {
+        width: auto;
+        height: 400px;
+        
+    }
+    
+    .typewriter{
+        font-size: 5vw;
+        margin-left: 1px;
+    }
+    #learn-more-link {
+        font-size: 2.5vw;
+        
+    }
+    #learn-more-container {
+        padding-top: 200px;
+        
+    }
+    .typewriter {
+        border: none;
+        border-right: 3px solid orangered; /* The typwriter cursor */
+        letter-spacing: 0.5;
+        white-space: unset;
+        
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+    .coverimg {
+        visibility: hidden;
+        display: block;
+        width: fit-content;
+        height: auto;
+        flex-wrap: wrap;
+        float: none;
+        clear: none;
+        display: none;
+        overflow: auto;
+    }
+    #learn-more {
+        
+    }
+    .detail-text {
+        margin-top: 10px;
+        margin-inline: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        width: fit-content;
+        text-align: center;
+        vertical-align: auto;
+    }
+
+    .img-boxes-2 {
+        margin: 30px;
+    }
+
+    footer {
+        
+    }
+
+}
+
+/* The "responsive" class is added to the 
+topnav with JavaScript when the user clicks 
+on the icon. This class makes the topnav 
+look good on small screens (display the 
+links vertically instead of horizontally) */
+@media screen and (max-width: 1140px) {
+    nav.responsive {position: relative;}
+        nav.responsive a.menu-icon {
+            position: absolute;
+            right: 0px; /*for visible & responsive icon*/
+            top: 0;
+            visibility: visible;
+        }
+        nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+} 

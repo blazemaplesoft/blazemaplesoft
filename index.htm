@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="bmts.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    
+    <title>BlazeMaple Software Services</title>
+</head>
+<body>
+    <header>
+
+        <nav class="nav" id="nav-bar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#social">Social Handles</a>
+            <a href="#contact">Contact</a>
+            <a href="#" class="menu-icon" onclick="myFunction()">
+                <i class="fa fa-bars" ></i>
+            </a>
+        </nav>
+    </header>
+
+   
+
+
+    <section>
+
+        
+        <div>
+            <div class="slideshow-container">
+        
+                <div class="mySlides fade" id="slide01" >
+                
+                    <h1 class="typewriter"
+                        style="background-color: rgba(0, 0, 0, 0.2);"
+                    >A One-Step Stop For All Your Tech Needs</h1>
+                    <div id="learn-more-container">
+                        <a href="#about" id="learn-more-link">Learn More</a>
+                    </div>
+                    <div id="materialic">
+                         <a href="#about">
+                            <i class="material-icons" id="icon" style="font-size:48px;color:red;">expand_more</i> 
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="mySlides fade" id="slide02">
+                  
+                    <h1 class="typewriter"
+                        style="background-color: rgba(0, 0, 0, 0.2);
+                        color: white;"
+                    >We Help In Transforming Businesses</h1>
+                    <div id="learn-more-container">
+                      <a href="#about" id="learn-more-link">Learn More</a>
+                    </div>
+                    <div id="materialic">
+                        <a href="#about">
+                          <i class="material-icons" id="icon" style="font-size:48px;color:red;">expand_more</i> 
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="mySlides fade" id="slide03">
+                
+                    <h1 class="typewriter"
+                        style="background-color: rgba(0, 0, 0, 0.2);
+                        color: white;"
+                    >Establishing Trust Between You And Us</h1>
+                    <div id="learn-more-container">
+                      <a href="#about" id="learn-more-link">Learn More</a>
+                    </div>
+                    <div id="materialic">
+                        <a href="#about">
+                          <i class="material-icons" id="icon" style="font-size:48px;color:red;">expand_more</i> 
+                        </a>
+                    </div>
+
+                </div>
+                
+            </div>
+            <br>
+                
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        </div>
+        
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) 
+                    {
+                    slides[i].style.display = "none";  
+                    }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) 
+                    {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 8000); // Change image every 8 seconds
+            }
+
+        </script>
+        
+
+        <i id="about"></i>
+        <div style="margin-block: 50px; background-color: rgba(17, 86, 212, 0.80);">
+            <img class="coverimg" style="float: left" src="images/walling-UP7JSnodG2M-unsplash.jpg" alt="">
+            <div class="detail-text">
+                <h1>OUR SERVICES</h1>
+                <article class="img-boxes">
+                    <div style="background-image: url(images/webs-dev.jpg);"></div>
+                    <h4>WEBSITE DEVELOPMENT</h4>
+                </article>
+                <article class="img-boxes">
+                    <div style="background-image: url(images/app-dev.jpg);"></div>
+                    <h4>APP DEVELOPMENT</h4>
+                </article>
+                <article class="img-boxes">
+                    <div style="background-image: url(images/web-apps.jpg);"></div>
+                    <h4>WEB-APPLICATIONS</h4>
+                </article>
+                <article class="img-boxes">
+                    <div style="background-image: url(images/soft-maintenance.jpg);"></div>
+                    <h4>SOFTWARE MAINTENANCE</h4>
+                </article>  
+            </div>
+        </div>
+
+        <br>
+
+        <div class="no-bg-text">
+            <h1>WHY US?</h1>
+            <article class="no-bg-elements">
+                <h3>PERFECTION</h3>
+                We believe in pixel perfect
+                development. We make sure that
+                our products are 100% working
+                and next to perfect.   
+            </article>
+            <article class="no-bg-elements">
+                <h3>QUALITY</h3>
+                The products we design are tested
+                well on different platforms and
+                environment to completely resolve
+                all bugs and glitches.
+            </article>
+            <article class="no-bg-elements">
+                <h3>LATEST TECHNOLOGY</h3>
+                We work using latest technology for
+                development
+                so it's easy to manage and migrate
+                to different platforms if required.
+            </article>
+            <article class="no-bg-elements">
+                <h3>USER-FRIENDLY DESIGNS</h3>
+                We use modern material design
+                themes and color combinations so users
+                can have a comfortable and pleasing
+                experience while browsing.
+            </article>
+            
+        </div>
+
+        <br>
+
+        <i id="projects"></i>
+        <div style="margin-block: 50px; background-color: rgba(21, 134, 17, 0.80);">
+            <img class="coverimg" style="float: right;" src="images/priscilla-du-preez-nNMBa7Y1Ymk-unsplash.jpg" alt="">
+            <div class="detail-text">
+                <h1>OUR PROJECTS</h1>
+
+                <ol></ol>
+                <ol></ol>
+                <ol></ol>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <i id="social"></i> 
+        <div style="margin-block: 50px; background-color: rgba(179, 182, 19, 0.80);">
+            <img class="coverimg" style="float: left;"; src="images/nathan-dumlao-kLmt1mpGJVg-unsplash.jpg" alt="">
+            <div class="detail-text">
+                <h1>SOCIAL HANDLES</h1>
+                <article class="img-boxes-2">
+                    <a href="https://www.instagram.com/blazemaplesoft?r=nametag" target="_blank">
+                        <div style="background-image: url(images/instagram.png);"></div>
+                        <h5>@blazemaplesoft</h5>
+                    </a>
+                </article>
+                <article class="img-boxes-2">
+                    <a href="https://t.me/blazemaplesoft" target="_blank">
+                        <div style="background-image: url(images/telegram.png);"></div>
+                        <h5>t.me/blazemaplesoft</h5>
+                    </a>
+                </article>
+                <article class="img-boxes-2">
+                    <a href="mailto:blazemaplesoft@gmail.com" target="_blank">
+                        <div style="background-image: url(images/email.png);"></div>
+                        <h5>Email Us</h5>
+                    </a>
+                </article>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <i id="contact"></i>
+        <div style="margin-bottom: 50px; background-color: rgba(136, 31, 168, 0.80); height: max-content;">
+            <img class="coverimg" style="float: right;" src="images/charles-deluvio-AT5vuPoi8vc-unsplash.jpg" alt="">
+            
+            <div class="detail-text" style="margin: auto;">
+                <h1>CONTACT US</h1>
+                
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYF91UylBMoGAq1N8tC1d2og1QueDhBaGYNlvr8yQRwt6Icg/viewform?embedded=true" width="300" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <footer>
+        <br>
+        <p>Designed and coded by BlazeMaple Software Services - 2021</p>
+        <br>
+    </footer>
+
+</body>
+</html>
